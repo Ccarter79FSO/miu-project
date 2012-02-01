@@ -1,3 +1,5 @@
+
+
 /*
 Christopher Carter
 VFW Project week 4
@@ -5,6 +7,13 @@ Term 0112
 */
 
 
+label[id=search]{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+
+/*
 body {
 	font-size: 13px;
 	font-style: italic;
@@ -162,3 +171,4 @@ img[id=Other]{
 	margin-left: -20px;
 	list-style-type: none;
 }
+*/
