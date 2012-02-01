@@ -12,7 +12,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "01-11-2012"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test1"]
 	},
 	"Game2": {
@@ -22,7 +21,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "01-17-2012"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test2"]
 	},
 	"Game3": {
@@ -32,7 +30,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "1"],
 		"pdate"		:["Purchase Date:", "01-15-2012"],
-/* 		"players"	:["Number of Players:", "1, or Single Player only"], */
 		"notes"		:["Notes:", "Test3"]
 	},
 	"Game4": {
@@ -42,7 +39,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "2"],
 		"pdate"		:["Purchase Date:", "11-11-2011"],
-/* 		"players"	:["Number of Players:", "2 players"], */
 		"notes"		:["Notes:", "Test4"]
 	},
 	"Game5": {
@@ -52,7 +48,6 @@ var json = {
 		"fav"		:["Favorite:", "No"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "12-17-2011"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test5"]
 	},
 	"Game6": {
@@ -62,7 +57,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "1"],
 		"pdate"		:["Purchase Date:", "01-21-2012"],
-/* 		"players"	:["Number of Players:", "1, or Single Player only"], */
 		"notes"		:["Notes:", "Test6"]
 	},
 	"Game7": {
@@ -72,7 +66,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "1"],
 		"pdate"		:["Purchase Date:", "10-11-2011"],
-/* 		"players"	:["Number of Players:", "1, or Single Player only"], */
 		"notes"		:["Notes:", "Test7"]
 	},
 	"Game8": {
@@ -82,7 +75,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "09-13-2011"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test8"]
 	},
 	"Game9": {
@@ -92,7 +84,6 @@ var json = {
 		"fav"		:["Favorite:", "No"],
 		"players"	:["Players:", "1"],
 		"pdate"		:["Purchase Date:", "01-15-2011"],
-/* 		"players"	:["Number of Players:", "1, or Single Player only"], */
 		"notes"		:["Notes:", "Test9"]
 	},
 	"Game10": {
@@ -102,7 +93,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "01-11-2012"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test10"]
 	},
 	"Game11": {
@@ -112,7 +102,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "05-09-2011"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test11"]
 	},
 	"Game12": {
@@ -122,7 +111,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "2"],
 		"pdate"		:["Purchase Date:", "09-15-2011"],
-/* 		"players"	:["Number of Players:", "2 Players"], */
 		"notes"		:["Notes:", "Test12"]
 	},
 	"Game13": {
@@ -132,7 +120,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "04-17-2011"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test13"]
 	},
 	"Game14": {
@@ -142,7 +129,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "1"],
 		"pdate"		:["Purchase Date:", "11-17-2011"],
-/* 		"players"	:["Number of Players:", "1, or Single Player only"], */
 		"notes"		:["Notes:", "Test14"]
 	},
 	"Game15": {
@@ -152,7 +138,6 @@ var json = {
 		"fav"		:["Favorite:", "No"],
 		"players"	:["Players:", "1"],
 		"pdate"		:["Purchase Date:", "01-01-2012"],
-/* 		"players"	:["Number of Players:", "1, or Single Player only"], */
 		"notes"		:["Notes:", "Test15"]
 	},
 	"Game16": {
@@ -162,7 +147,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "12-11-2011"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test16"]
 	},
 	"Game17": {
@@ -172,7 +156,6 @@ var json = {
 		"fav"		:["Favorite:", "No"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "06-05-2011"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test17"]
 	},
 	"Game18": {
@@ -182,7 +165,6 @@ var json = {
 		"fav"		:["Favorite:", "No"],
 		"players"	:["Players:", "1"],
 		"pdate"		:["Purchase Date:", "01-15-2012"],
-/* 		"players"	:["Number of Players:", "1, or Single Player only"], */
 		"notes"		:["Notes:", "Test18"]
 	},
 	"Game19": {
@@ -192,7 +174,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "07-11-2011"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test19"]
 	},
 	"Game20": {
@@ -202,7 +183,6 @@ var json = {
 		"fav"		:["Favorite:", "Yes"],
 		"players"	:["Players:", "4"],
 		"pdate"		:["Purchase Date:", "12-17-2011"],
-/* 		"players"	:["Number of Players:", "4 or more Players"], */
 		"notes"		:["Notes:", "Test20"]
 	},
 	"Game21": {
@@ -212,7 +192,6 @@ var json = {
 		"fav"		:["Favorite:", "No"],
 		"players"	:["Players:", "2"],
 		"pdate"		:["Purchase Date:", "10-15-2011"],
-/* 		"players"	:["Number of Players:", "2 Player"], */
 		"notes"		:["Notes:", "Test21"]
 	}
 
