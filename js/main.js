@@ -20,10 +20,10 @@ window.addEventListener("DOMContentLoaded", function(){
 		var formTag = document.getElementsByTagName("form"); //formTag is an array of all the form tags
 			selectLi = $('select');
 			makeSelect = document.createElement('select');
-			makeSelect.setAttribute("id", "players");
-		for (var i=0; i<numPlayers.length; i++) {
+			makeSelect.setAttribute("id", "platform");
+		for (var i=0; i<platform.length; i++) {
 			var makeOption = document.createElement('option');
-			var optText = numPlayers[i];
+			var optText = platform[i];
 			makeOption.setAttribute("value", optText);
 			makeOption.innerHTML = optText;
 			makeSelect.appendChild(makeOption);
@@ -32,6 +32,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	//find value of selected radio button
+/*
 	function getSelectedRadio(){
 		var radios = document.forms[0].platform;
 		for (i=0; i<radios.length; i++) {
@@ -40,6 +41,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			}
 		}
 	}
+*/
 	
 	function getCheckBoxValue1(){
 		var checkbox = document.forms[0].genre;
@@ -92,17 +94,17 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 		//gather up all our form field values aand store in an object
 		//object properties are going to contain and array with the form label and input value
-		getSelectedRadio();
+		//getSelectedRadio();
 		getCheckBoxValue1();
 		getCheckBoxValue2();
 		var item		  	= {};
 			item.gname		= ["Game Name:", $('gname').value];
-			item.platform	= ["Platform:", platformValue];
+			item.platform	= ["Platform:", $('platform').value];
 			item.genre		= ["Genre:", genreArray];
 			item.fav		= ["Favorite:", favoriteValue];
-			item.rating		= ["Rating:", $('rating').value];
+			item.players	= ["Players:", $('players').value];
 			item.pdate		= ["Purchase Date:", $('pdate').value];
-			item.players	= ["Number of Players:", $('players').value];
+			//item.players	= ["Number of Players:", $('players').value];
 			item.notes		= ["Notes:", $('notes').value];
 		//save data to local storage: use stringify to convert our object to a string
 		localStorage.setItem(id, JSON.stringify(item));
@@ -205,6 +207,8 @@ window.addEventListener("DOMContentLoaded", function(){
 		
 		//populate the form fields with the current local storage values
 		$('gname').value = item.gname[1];
+		$('platform').value = item.platform[1];
+/*
 		var radios = document.forms[0].platform;
 		for(var i=0;i<radios.length;i++){
 			if(radios[i].value == "PC" && item.platform[1] == "PC"){
@@ -221,6 +225,7 @@ window.addEventListener("DOMContentLoaded", function(){
 				radios[i].setAttribute("checked", "checked");
 			}
 		}
+*/
 		var checkbox = document.forms[0].genre;
 		for (i=0; i<checkbox.length; i++) {
 			var checkBoxIndex = checkbox[i];
@@ -246,9 +251,9 @@ window.addEventListener("DOMContentLoaded", function(){
 		if(item.fav[1] == "Yes"){
 			$('fav').setAttribute('checked','checked');
 		}
-		$('rating').value = item.rating[1];
-		$('pdate').value = item.pdate[1];
 		$('players').value = item.players[1];
+		$('pdate').value = item.pdate[1];
+		//$('players').value = item.players[1];
 		$('notes').value = item.notes[1];
 		
 		//remove initial listener from the input 'submit game' button
@@ -287,10 +292,12 @@ window.addEventListener("DOMContentLoaded", function(){
 	function validate(e){
 		//define the elements we want to check
 		var getGname = $('gname');
+		var getPlatform = $('platform');
 		
 		//reset error messages
 		errMsg.innerHTML = "";
-		getGname.style.border = "1px solid black";		
+		getGname.style.border = "1px solid black";
+		getPlatform.style.border = "1px solid black"		
 		//get error messages
 		var messageAry = [];
 		
@@ -301,6 +308,15 @@ window.addEventListener("DOMContentLoaded", function(){
 			messageAry.push(gnameError);
 			alert("You must enter a game name to proceed.");
 		}
+		
+		//Platform Validation
+		if(getPlatform.value === "--Select a Platform--"){
+			var platformError = "Please select a platform";
+			getPlatform.style.border = "1px solid red";
+			messageAry.push(platformError);
+			alert("You must select a platform to proceed.");
+		}
+
 		//If there were any errors, display them on the screen
 		if(messageAry.length >= 1){
 			for(var i=0,j=messageAry.length;i<j;i++){
@@ -320,8 +336,9 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	//variable defaults
-	var	numPlayers = ["--Number of Players--", "1, or Single Player only", "2 Players", "3 Players", "4 or more Players"],
-		platformValue,
+	var	platform = ["--Select a Platform--", "PC", "PS3", "Xbox", "Wii", "DS", "Other"],
+		//numPlayers = ["--Number of Players--", "1, or Single Player only", "2 Players", "3 Players", "4 or more Players"],
+		//platformValue,
 		genreValue,
 		genreArray = [],
 		favoriteValue = "No",
