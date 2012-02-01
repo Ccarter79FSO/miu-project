@@ -28,6 +28,7 @@ Term 0112
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
 
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -38,15 +39,23 @@ Term 0112
 	
 	<div data-role="page" id="home">
 		
-		<div data-role="header"  data-theme="a">
+		<div data-role="header" data-theme="a">
 			<h1>Game Collector</h1>
 		</div>
 		
-		<div data-role="content"  data-theme="a">
-			<a href="#additem">
-				<img src="images/CTA.png" height="200px" width="320px"/>
-			</a>
-			<ul data-role="listview">
+		<div data-role="content" data-theme="a">
+<!--
+			<ul>
+				<li>
+-->
+					<a href="#additem">
+						<img src="images/CTA.png" id="cta" />
+					</a>
+<!--
+				</li>
+			</ul>		
+-->
+			<ul data-role="listview" data-inset="true">
 				<li data-role="list-divider">Browse Collection</li>
 				<li>
 					<a href="#">
@@ -85,32 +94,28 @@ Term 0112
 						<p>Show all Other handheld games in your collection.</p>
 					</a></li>
 			</ul>
+			<ul data-role="listview" data-inset="true" data-theme="a">
+				<li>
+					<label for="search" id="search">Search Collection:</label>
+					<input type="search" name="search" id="search" value="" />
+				</li>			
+			</ul>
 		</div>
-			
-		<div data-role="fieldcontain">
-			<label for="search" id="search">Search Collection:</label>
-			<input type="search" name="search" id="search" value="" />
-		</div>
-		
+					
 		<div data-role="footer"  data-theme="a">
 			<h4>Footer</h4>
 		</div>
 	
-	<!--
-<div>Create and manage your video game inventory.</div>
-	<h2>Click below to get started!</h2>
-	<a href="additem.html">Add A Game to your collection</a>
--->
 	</div>
 	
-	<div data-role="page" id="additem" data-add-back-btn="true">
+	<div data-role="page" id="additem" data-add-back-btn="true" data-theme="a">
 	
-		<div data-role="header" data-position="fixed">
+		<div data-role="header">
 			<h1>Game Collector</h1>
 		</div>
 		
 		<div data-role="content">
-		<form id="gameForm" data-theme="a">
+		<form id="gameForm">
 			<fieldset id="addGameFieldset">
 				<legend></legend>
 				<span>Add A Game</span>
@@ -119,18 +124,6 @@ Term 0112
 					<ul>
 						<li id"gname"><label for="gname">Game Name:<span id="required">*</span></label><input type="text" id="gname" required="required"/></li>
 						<li id="select" data-native-menu="false"><label for="platform">Platform:<span id="required">*</span></label><br /></li>
-<!--
-						<li id="platform">Platform:
-							<ul>
-								<li><input type="radio" value="PC" id="pc" name="platform" /><label for="pc">PC</label></li>
-								<li><input type="radio" value="Xbox" id="xbox360" name="platform" /><label for="xbox360">Xbox 360</label></li>
-								<li><input type="radio" value="PS3" id="ps3" name="platform" /><label for="ps3">Playstation 3</label></li>
-								<li><input type="radio" value="Wii" id="wii" name="platform" /><label for="wii">Nintendo Wii</label></li>
-								<li><input type="radio" value="DS" id="ds" name="platform" /><label for="ds">Nintendo DS/DSi/3DS</label></li>
-								<li><input type="radio" value="Other" id="otherHandheld" name="platform" /><label for="otherHandheld">Other Handheld</label></li>
-							</ul>
-						</li>
--->
 						<li id="genre">Genre:
 							<ul>
 								<li><input type="checkbox" value="RPG" id="rpg" name="genre" /><label for="rpg">RPG</label></li>
