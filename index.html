@@ -27,29 +27,156 @@ Term 0112
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" /> -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<!-- <link rel="stylesheet" href="css/style.css" type="text/css" /> -->
 
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
-<!-- 	<script src="js/libs/modernizr.custom.min.js"></script> -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
 <body>
 	
-	<div ></div>
-	<h1>Game Collector</h1>
-	<div>Create and manage your video game inventory.</div>
+	<div data-role="page" id="home">
+		
+		<div data-role="header" data-position="fixed">
+			<h1>Game Collector</h1>
+		</div>
+		
+		<div data-role="content">
+			<a href="#additem">
+				<img src="images/CTA.png" height="200px" width="320px"/>
+			</a>
+			<ul data-role="listview">
+				<li data-role="list-divider">Browse Collection</li>
+				<li>
+					<a href="#">
+						<img src="images/PC.png" />
+						<h3>PC Games</h3>
+						<p>Show all PC games in your collection.</p>
+					</a></li>
+				<li>
+					<a href="#">
+						<img src="images/PS3.png" />
+						<h3>PS3 Games</h3>
+						<p>Show all PS3 games in your collection.</p>
+					</a></li>
+				<li>
+					<a href="#">
+						<img src="images/Xbox.png" />
+						<h3>Xbox Games</h3>
+						<p>Show all Xbox games in your collection.</p>
+					</a></li>
+				<li>
+					<a href="#">
+						<img src="images/Wii.png" />
+						<h3>Wii Games</h3>
+						<p>Show all Wii games in your collection.</p>
+					</a></li>
+				<li>
+					<a href="#">
+						<img src="images/DS.png" />
+						<h3>DS Games</h3>
+						<p>Show all DS games in your collection.</p>
+					</a></li>
+				<li>
+					<a href="#">
+						<img src="images/Other.png" />
+						<h3>Other Handheld Games</h3>
+						<p>Show all Other handheld games in your collection.</p>
+					</a></li>
+			</ul>
+			<label for="search-basic">Search Collection:</label>
+			<input type="search" name="search" id="searc-basic" value="" />
+			
+		</div>
+		
+		<div data-role="footer">
+			<h4>Footer</h4>
+		</div>
+	
+	<!--
+<div>Create and manage your video game inventory.</div>
 	<h2>Click below to get started!</h2>
 	<a href="additem.html">Add A Game to your collection</a>
-
+-->
+	</div>
+	
+	<div data-role="page" id="additem" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Game Collector</h1>
+		</div>
+		
+		<div data-role="content">
+		<form id="gameForm" data-theme="a">
+			<fieldset id="addGameFieldset">
+				<legend></legend>
+				<span>Add A Game</span>
+				<div id="required">Fields marked with * are required.</div>
+				<ul id="errors"></ul>
+					<ul>
+						<li id"gname"><label for="gname">Game Name:<span id="required">*</span></label><input type="text" id="gname" required="required"/></li>
+						<li id="select" data-native-menu="false"><label for="platform">Platform:<span id="required">*</span></label><br /></li>
+<!--
+						<li id="platform">Platform:
+							<ul>
+								<li><input type="radio" value="PC" id="pc" name="platform" /><label for="pc">PC</label></li>
+								<li><input type="radio" value="Xbox" id="xbox360" name="platform" /><label for="xbox360">Xbox 360</label></li>
+								<li><input type="radio" value="PS3" id="ps3" name="platform" /><label for="ps3">Playstation 3</label></li>
+								<li><input type="radio" value="Wii" id="wii" name="platform" /><label for="wii">Nintendo Wii</label></li>
+								<li><input type="radio" value="DS" id="ds" name="platform" /><label for="ds">Nintendo DS/DSi/3DS</label></li>
+								<li><input type="radio" value="Other" id="otherHandheld" name="platform" /><label for="otherHandheld">Other Handheld</label></li>
+							</ul>
+						</li>
+-->
+						<li id="genre">Genre:
+							<ul>
+								<li><input type="checkbox" value="RPG" id="rpg" name="genre" /><label for="rpg">RPG</label></li>
+								<li><input type="checkbox" value="FPS" id="fps" name="genre" /><label for="fps">FPS</label></li>
+								<li><input type="checkbox" value="Action/Adventure" id="actAdv" name="genre" /><label for="actAdv">Action/Adventure</label></li>
+								<li><input type="checkbox" value="RTS" id="rts" name="genre" /><label for="rts">RTS</label></li>
+								<li><input type="checkbox" value="Simulation" id="sim" name="genre" /><label for="sim">Simulation</label></li>
+								<li><input type="checkbox" value="Sports" id="sports" name="genre" /><label for="sports">Sports</label></li>
+								<li><input type="checkbox" value="Casual" id="casual" name="genre" /><label for="casual">Casual</label></li>
+							</ul>
+						</li>
+						<li>Favorite?
+							<ul>
+								<li><input type="checkbox" value="Yes" id="fav" /><label for="fav">Yes</label></li>
+							</ul>
+						</li>
+						<li>How many players?
+							<ul>
+								<li><label for="players"></label><input type="range" value="1" min="1" max="4" id="players" name="players"></li>
+								
+							</ul>
+						</li>
+						<li><label for="purchaseDate">Date of purchase:</label><input type="date" min="1970-01-01" max="2020-12-31" id="pdate" name="purchaseDate" placeholder="2012-01-05" /></li>
+						<!-- <li id="select"><label for="numPlayers">How many players are supported?</label><br /></li> -->
+						<li><label for="notes">Add a note about your game:</label><textarea id="notes"></textarea></li>		
+					</ul>
+			</fieldset><br>
+			<input type="submit" id="submit" value="Add game to your inventory."/><p>
+		</form>
+		<nav>
+			<a href="#" id="clear">Clear Stored Data</a>
+			<a href="#" id="displayLink">Display Data</a>
+			<a href="#additem" id="addNew" style="display:none;">Add New Game</a>
+		</nav>
+			
+		</div>
+		
+		<div data-role="footer">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
 	
 
 	<!-- JavaScript under here -->
-<!--
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
--->
 	<script src="js/main.js" type="text/javascript"></script>
 
 </body>
