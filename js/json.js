@@ -1,7 +1,7 @@
 /*
 Christopher Carter
-VFW Project Week 4
-Term 0112
+MIU Project Week 1
+Term 0212
 */
 
 function autoFillData() {

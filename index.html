@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--
 Christopher Carter
-VFW Project week 4
-Term 0112
+MIU Project week 1
+Term 0212
 -->
 
 <!doctype html>  
@@ -28,7 +28,7 @@ Term 0112
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/indexstyle.css" />
 
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -40,17 +40,17 @@ Term 0112
 	<div data-role="page" id="home">
 		
 		<div data-role="header" data-theme="a">
+			
 			<h1>Game Collector</h1>
+		
 		</div>
 		
 		<div data-role="content" data-theme="a">
-<!-- 			<ul> -->
-<!-- 				<li> -->
-					<a href="#additem"><img src="images/CTA.png" id="cta" /></a>
-						
-					
-<!-- 				</li> -->
-<!-- 			</ul>		 -->
+			
+			<div>	
+				<a href="additem.html" data-ajax="false"><img src="images/CTA.png" id="cta" /></a>
+			</div>	
+			
 			<ul data-role="listview" data-inset="true">
 				<li data-role="list-divider">Browse Collection</li>
 				<li>
@@ -89,35 +89,44 @@ Term 0112
 						<h3>Other Handheld Games</h3>
 						<p>Show all Other handheld games in your collection.</p>
 					</a></li>
-			</ul>
-			<ul data-role="listview" data-inset="true" data-theme="a">
 				<li>
 					<label for="search" id="search">Search Collection:</label>
 					<input type="search" name="search" id="search" value="" />
-				</li>			
-			</ul>
+				</li>	
+			</ul>			
 		</div>
 					
 		<div data-role="footer"  data-theme="a">
-			<h4><a href="http://www.github.com/ccarter79fso/miu-project/week1/">Github Repo</a><a href="http://ccarter79fso.github.com/miu-project/">Github Site</a></h4>
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week1">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
 		</div>
 	
 	</div>
 	
+
+<!--
 	<div data-role="page" id="additem" data-add-back-btn="true" data-theme="a">
 	
 		<div data-role="header">
-			<h1>Game Collector</h1>
+			<h1>Add A Game</h1>
 		</div>
 		
 		<div data-role="content">
-		<form id="gameForm">
+		
+		<form action="" method="post" id="gameForm">
+
 			<fieldset id="addGameFieldset">
 				<legend></legend>
-				<span>Add A Game</span>
+ 				<span>Add A Game</span>
+				
 				<div id="required">Fields marked with * are required.</div>
+				
 				<ul id="errors"></ul>
-					<ul>
+ 					<ul>
+					<div data-role="fieldcontain">
+						
 						<li id"gname"><label for="gname">Game Name:<span id="required">*</span></label><input type="text" id="gname" required="required"/></li>
 						<li id="select" data-native-menu="false"><label for="platform">Platform:<span id="required">*</span></label><br /></li>
 						<li id="genre">Genre:
@@ -144,7 +153,7 @@ Term 0112
 						</li>
 						<li><label for="purchaseDate">Date of purchase:</label><input type="date" min="1970-01-01" max="2020-12-31" id="pdate" name="purchaseDate" placeholder="2012-01-05" /></li>
 						<!-- <li id="select"><label for="numPlayers">How many players are supported?</label><br /></li> -->
-						<li><label for="notes">Add a note about your game:</label><textarea id="notes"></textarea></li>		
+<!--						<li><label for="notes">Add a note about your game:</label><textarea id="notes"></textarea></li>		
 					</ul>
 			</fieldset><br>
 			<input type="submit" id="submit" value="Add game to your inventory."/><p>
@@ -162,6 +171,8 @@ Term 0112
 		</div>
 		
 	</div>
+-->
+
 	
 
 	<!-- JavaScript under here -->
