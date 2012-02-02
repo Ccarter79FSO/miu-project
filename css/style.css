@@ -8,7 +8,7 @@ Term 0112
 
 
 img[id=cta]{
-	margin-left: 1px;
+	/* margin-left: 5px; */
 	width: 300px;
 	height: 200px;
 	
@@ -108,16 +108,19 @@ div {
 select {
 	margin-bottom: 3px;
 }
+*/
 
 div[id=items] {
 	font-family: Helvetica, Verdana, Arial, sans-serif;
 	font-variant: normal;
 	font-style: normal;
 	font-weight: normal;
+/*
 	border-width: 3px;
 	border-color: black;
 	border-style: dashed;
 	background-color: #ffde7e;
+*/
 	font-size: 13px;
 	
 }
@@ -125,7 +128,7 @@ div[id=items] {
 div[id=required]{
 	color: red;
 	font-weight: bold;
-	font-size: inherit;
+	font-size: 10px;
 }
 
 li[id=gname]{
@@ -173,4 +176,3 @@ img[id=Other]{
 	margin-left: -20px;
 	list-style-type: none;
 }
-*/

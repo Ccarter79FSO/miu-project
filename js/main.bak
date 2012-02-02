@@ -119,7 +119,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 		//write data from local storage to the browswer
 		var makeDiv = document.createElement('div');
-		makeDiv.setAttribute("data-role", "content");
 		makeDiv.setAttribute("id", "items");
 		var makeList = document.createElement('ul');
 		var setUl = makeList.setAttribute("id", "items");
@@ -146,7 +145,7 @@ window.addEventListener("DOMContentLoaded", function(){
 				makeSubLi.innerHTML = optSubText;
 				makeSubList.appendChild(linksLi);
 			}
-			makeItemLinks(localStorage.key(i), linksLi); //create edit and delete links for each item in local storage
+			makeItemLinks(localStorage.key(i),linksLi); //create edit and delete links for each item in local storage
 		}
 	
 	}
@@ -163,15 +162,15 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	//auto populate local storage
-//	function autoFillData(){
+	function autoFillData(){
 		//the actual JSON object date required for this to work is coming from json.js, which is loaded from the additem.html page
 		//store the JSON object into local storage
-//		for (var n in json){
-//			var id = Math.floor(Math.random()*100000001);
-//			localStorage.setItem(id, JSON.stringify(json[n]));
-//		}
-//	}
-//	
+		for (var n in json){
+			var id = Math.floor(Math.random()*100000001);
+			localStorage.setItem(id, JSON.stringify(json[n]));
+		}
+	}
+	
 	//function to create edit and delete links for each stored item when displayed
 	function makeItemLinks(key, linksLi){
 		//add edit single item link
