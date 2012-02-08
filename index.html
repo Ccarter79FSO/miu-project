@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 Christopher Carter
-MIU Project week 1
+MIU Project week 2
 Term 0212
 -->
 
@@ -52,43 +52,37 @@ Term 0212
 			</div>	
 			
 			<ul data-role="listview" data-inset="true">
-				<li data-role="list-divider">Browse Collection</li>
+				<li data-role="list-divider">Main Navigation</li>
 				<li>
-					<a href="#">
-						<img src="images/PC.png" />
-						<h3>PC Games</h3>
-						<p>Show all PC games in your collection.</p>
-					</a></li>
+					<a href="#games">
+						<h3>Browse Game Collection</h3>
+						<p>Show all games in your collection.</p>
+					</a>
+				</li>
 				<li>
-					<a href="#">
-						<img src="images/PS3.png" />
-						<h3>PS3 Games</h3>
-						<p>Show all PS3 games in your collection.</p>
-					</a></li>
+					<a href="#friends">
+						<h3>Friends</h3>
+						<p>Connect with your friends.</p>
+					</a>
+				</li>
 				<li>
-					<a href="#">
-						<img src="images/Xbox.png" />
-						<h3>Xbox Games</h3>
-						<p>Show all Xbox games in your collection.</p>
-					</a></li>
+					<a href="#account">
+						<h3>Manage Account</h3>
+						<p>Manage your Game Collector account settings.</p>
+					</a>
+				</li>
 				<li>
-					<a href="#">
-						<img src="images/Wii.png" />
-						<h3>Wii Games</h3>
-						<p>Show all Wii games in your collection.</p>
-					</a></li>
+					<a href="#help">
+						<h3>Help</h3>
+						<p>Having trouble with our app? Find your answer here.</p>
+					</a>
+				</li>
 				<li>
-					<a href="#">
-						<img src="images/DS.png" />
-						<h3>DS Games</h3>
-						<p>Show all DS games in your collection.</p>
-					</a></li>
-				<li>
-					<a href="#">
-						<img src="images/Other.png" />
-						<h3>Other Handheld Games</h3>
-						<p>Show all Other handheld games in your collection.</p>
-					</a></li>
+					<a href="#about">
+						<h3>About Us</h3>
+						<p>Who we are, and what we do.</p>
+					</a>
+				</li>
 				<li>
 					<label for="search" id="search">Search Collection:</label>
 					<input type="search" name="search" id="search" value="" />
@@ -98,80 +92,989 @@ Term 0212
 					
 		<div data-role="footer"  data-theme="a">
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week1">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
 	
 	</div>
 	
-
-<!--
-	<div data-role="page" id="additem" data-add-back-btn="true" data-theme="a">
+	<div data-role="page" id="games" data-add-back-btn="true">
 	
-		<div data-role="header">
-			<h1>Add A Game</h1>
-		</div>
-		
-		<div data-role="content">
-		
-		<form action="" method="post" id="gameForm">
-
-			<fieldset id="addGameFieldset">
-				<legend></legend>
- 				<span>Add A Game</span>
+		<div data-role="header" data-theme="a">
 				
-				<div id="required">Fields marked with * are required.</div>
-				
-				<ul id="errors"></ul>
- 					<ul>
-					<div data-role="fieldcontain">
-						
-						<li id"gname"><label for="gname">Game Name:<span id="required">*</span></label><input type="text" id="gname" required="required"/></li>
-						<li id="select" data-native-menu="false"><label for="platform">Platform:<span id="required">*</span></label><br /></li>
-						<li id="genre">Genre:
-							<ul>
-								<li><input type="checkbox" value="RPG" id="rpg" name="genre" /><label for="rpg">RPG</label></li>
-								<li><input type="checkbox" value="FPS" id="fps" name="genre" /><label for="fps">FPS</label></li>
-								<li><input type="checkbox" value="Action/Adventure" id="actAdv" name="genre" /><label for="actAdv">Action/Adventure</label></li>
-								<li><input type="checkbox" value="RTS" id="rts" name="genre" /><label for="rts">RTS</label></li>
-								<li><input type="checkbox" value="Simulation" id="sim" name="genre" /><label for="sim">Simulation</label></li>
-								<li><input type="checkbox" value="Sports" id="sports" name="genre" /><label for="sports">Sports</label></li>
-								<li><input type="checkbox" value="Casual" id="casual" name="genre" /><label for="casual">Casual</label></li>
-							</ul>
-						</li>
-						<li>Favorite?
-							<ul>
-								<li><input type="checkbox" value="Yes" id="fav" /><label for="fav">Yes</label></li>
-							</ul>
-						</li>
-						<li>How many players?
-							<ul>
-								<li><label for="players"></label><input type="range" value="1" min="1" max="4" id="players" name="players"></li>
-								
-							</ul>
-						</li>
-						<li><label for="purchaseDate">Date of purchase:</label><input type="date" min="1970-01-01" max="2020-12-31" id="pdate" name="purchaseDate" placeholder="2012-01-05" /></li>
-						<!-- <li id="select"><label for="numPlayers">How many players are supported?</label><br /></li> -->
-<!--						<li><label for="notes">Add a note about your game:</label><textarea id="notes"></textarea></li>		
-					</ul>
-			</fieldset><br>
-			<input type="submit" id="submit" value="Add game to your inventory."/><p>
-		</form>
-		<nav>
-			<a href="#" id="clear">Clear Stored Data</a>
-			<a href="#" id="displayLink">Display Data</a>
-			<a href="#additem" id="addNew" style="display:none;">Add New Game</a>
-		</nav>
+			<h1>Game Collection</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
 			
 		</div>
+	
+		<div data-role="content" data-theme="a">
+
 		
-		<div data-role="footer">
-			<h4>Footer</h4>
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">Browse Collection</li>
+				<li>
+					<a href="#pc">
+						<img src="images/PC.png" />
+						<h3>PC Games</h3>
+						<p>Show all PC games in your collection.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#ps3">
+						<img src="images/PS3.png" />
+						<h3>PS3 Games</h3>
+						<p>Show all PS3 games in your collection.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#xbox">
+						<img src="images/Xbox.png" />
+						<h3>Xbox Games</h3>
+						<p>Show all Xbox games in your collection.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#wii">
+						<img src="images/Wii.png" />
+						<h3>Wii Games</h3>
+						<p>Show all Wii games in your collection.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#ds">
+						<img src="images/DS.png" />
+						<h3>DS Games</h3>
+						<p>Show all DS games in your collection.</p>
+					</a>
+				</li>
+			</ul>
+	
 		</div>
-		
+	
+		<div data-role="footer"  data-theme="a">
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
+		</div>
 	</div>
--->
+
+	<div data-role="page" id="friends" data-add-back-btn="true">
+	
+		<div data-role="header" data-theme="a">
+				
+			<h1>Friends</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			
+		</div>
+	
+		<div data-role="content" data-theme="a">
+
+			<p>Page Under Construction.</p>
+	
+		</div>
+	
+		<div data-role="footer"  data-theme="a">
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
+		</div>
+
+	</div>
+	
+		<div data-role="page" id="account" data-add-back-btn="true">
+	
+		<div data-role="header" data-theme="a">
+				
+			<h1>Account Settings</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			
+		</div>
+	
+		<div data-role="content" data-theme="a">
+
+			<p>Page Under Construction.</p>
+	
+		</div>
+	
+		<div data-role="footer"  data-theme="a">
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
+		</div>
+
+	</div>	
+	
+		<div data-role="page" id="help" data-add-back-btn="true">
+	
+		<div data-role="header" data-theme="a">
+				
+			<h1>Help & Support</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			
+		</div>
+	
+		<div data-role="content" data-theme="a">
+
+			<p>Page Under Construction.</p>
+	
+		</div>
+	
+		<div data-role="footer"  data-theme="a">
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
+		</div>
+
+	</div>	
+	
+		<div data-role="page" id="about" data-add-back-btn="true">
+	
+		<div data-role="header" data-theme="a">
+				
+			<h1>About Us</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			
+		</div>
+	
+		<div data-role="content" data-theme="a">
+
+			<p>Page Under Construction.</p>
+	
+		</div>
+	
+		<div data-role="footer"  data-theme="a">
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
+		</div>
+
+	</div>
+	
+	<div data-role="page" id="pc" data-add-back-btn="true">
+	
+		<div data-role="header" data-theme="a">
+		
+			<h1>PC Games</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+		
+		</div>
+				
+		<div data-role="content" data-theme="a">
+			
+			<div data-role="listview" data-filter="true" data-filter-theme="a">
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Skyrim</h3>
+					<p>Platform: PC</p>
+					<p>Genre: RPG,FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Rage</h3>
+					<p>Platform: PC</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Star Wars: The Old Republic</h3>
+					<p>Platform: PC</p>
+					<p>Genre: RPG</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>World Of Warcraft</h3>
+					<p>Platform: PC</p>
+					<p>Genre: RPG</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Star Craft II</h3>
+					<p>Platform: PC</p>
+					<p>Genre: RTS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>L.A. Noire</h3>
+					<p>Platform: PC</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Call Of Duty: Modern Warfare 3</h3>
+					<p>Platform: PC</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Assassin's Creed</h3>
+					<p>Platform: PC</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Assassin's Creed II</h3>
+					<p>Platform: PC</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Assassin's Creed II: Brotherhood</h3>
+					<p>Platform: PC</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Assassin's Creed II: Revelations</h3>
+					<p>Platform: PC</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Batman Arkham Asylum</h3>
+					<p>Platform: PC</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Batman Arkham City</h3>
+					<p>Platform: PC</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
+					<h3>Portal</h3>
+					<p>Platform: PC</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+			</div>
+
+		</div>
+	
+		<div data-role="footer"  data-theme="a">
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" data-ajax="false" data-icon="check">Add New Game</a></li>
+					<li><a href="#" data-ajax="false" data-icon="delete">Clear Storage</a></li>
+					<li><a href="#" data-ajax="false" data-icon="gear">Options</a></li>	
+				</ul>
+			
+			</div>
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
+		</div>
+
+	</div>	
+
+	
+	<div data-role="page" id="ps3" data-add-back-btn="true">
+	
+		<div data-role="header" data-theme="a">
+				
+			<h1>PS3 Games</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			
+		</div>
+	
+		<div data-role="content" data-theme="a">
+
+			<div data-role="listview" data-filter="true" data-filter-theme="a">
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Demon Souls</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: RPG,Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Uncharted: Drakes Fortune</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Uncharted 2: Among Theives</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Uncharted 3: Drake's Deception</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Little Big Planet</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Casual</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Little Big Planet 2</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Casual</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>God Of War 3</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Red Dead Redemption</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Singstar</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Casual</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 2</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Singstar: Pop</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Casual</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 2</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Singstar: Dance</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Casual</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 2</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Singstar: Vol 2</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Casual</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 2</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Singstar: Vol 3</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: Casual</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 2</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/PS3.png" id="PS3" />
+					<h3>Final Fantasy XIII-2</h3>
+					<p>Platform: PS3</p>
+					<p>Genre: RPG</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+			</div>
+	
+		</div>
+	
+		<div data-role="footer"  data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" data-ajax="false" data-icon="check">Add New Game</a></li>
+					<li><a href="#" data-ajax="false" data-icon="delete">Clear Storage</a></li>
+					<li><a href="#" data-ajax="false" data-icon="gear">Options</a></li>	
+				</ul>
+			
+			</div>
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
+		</div>
+
+	</div>
+	
+	
+	<div data-role="page" id="xbox" data-add-back-btn="true">
+	
+		<div data-role="header" data-theme="a">
+				
+			<h1>Xbox Games</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			
+		</div>
+	
+		<div data-role="content" data-theme="a">
+
+			<div data-role="listview" data-filter="true" data-filter-theme="a">
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Gears Of War</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Gears Of War 2</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Gears Of War 3</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Halo: Combat Evolved</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Halo 2</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Halo 3</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Halo: Reach</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Saints Row 3</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Skyrim</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: RPG,FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Call Of Duty: Modern Warfare 3</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Battlefield 3</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Grand Theft Auto IV</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Rock Band 3</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: Casual</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Xbox.png" id="Xbox" />
+					<h3>Guitar Smith</h3>
+					<p>Platform: Xbox</p>
+					<p>Genre: Casual</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+			</div>
+	
+		</div>
+	
+		<div data-role="footer"  data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" data-ajax="false" data-icon="check">Add New Game</a></li>
+					<li><a href="#" data-ajax="false" data-icon="delete">Clear Storage</a></li>
+					<li><a href="#" data-ajax="false" data-icon="gear">Options</a></li>	
+				</ul>
+			
+			</div>
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
+		</div>
+
+	</div>	
+
+	<div data-role="page" id="wii" data-add-back-btn="true">
+	
+		<div data-role="header" data-theme="a">
+				
+			<h1>Wii Games</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			
+		</div>
+	
+		<div data-role="content" data-theme="a">
+
+			<div data-role="listview" data-filter="true" data-filter-theme="a">
+				<li>
+					<img src="images/Wii.png" id="Wii" />
+					<h3>Super Mario Galaxy</h3>
+					<p>Platform: Wii</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Wii.png" id="Wii" />
+					<h3>Super Mario Galaxy 2</h3>
+					<p>Platform: Wii</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Wii.png" id="Wii" />
+					<h3>Legend Of Zelda: Skyward Sword</h3>
+					<p>Platform: Wii</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Wii.png" id="Wii" />
+					<h3>Metroid Prime Trilogy</h3>
+					<p>Platform: Wii</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Wii.png" id="Wii" />
+					<h3>Super Smash Bro's Brawl</h3>
+					<p>Platform: Wii</p>
+					<p>Genre: Sports</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Wii.png" id="Wii" />
+					<h3>Conduit</h3>
+					<p>Platform: Wii</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/Wii.png" id="Wii" />
+					<h3>Conduit 2</h3>
+					<p>Platform: Wii</p>
+					<p>Genre: FPS</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+			</div>
+	
+		</div>
+	
+		<div data-role="footer"  data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" data-ajax="false" data-icon="check">Add New Game</a></li>
+					<li><a href="#" data-ajax="false" data-icon="delete">Clear Storage</a></li>
+					<li><a href="#" data-ajax="false" data-icon="gear">Options</a></li>	
+				</ul>
+			
+			</div>
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
+		</div>
+
+	</div>	
+
+	
+	<div data-role="page" id="ds" data-add-back-btn="true">
+	
+		<div data-role="header" data-theme="a">
+				
+			<h1>DS Games</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			
+		</div>
+	
+		<div data-role="content" data-theme="a">
+
+			<div data-role="listview" data-filter="true" data-filter-theme="a">
+				<li>
+					<img src="images/DS.png" id="DS" />
+					<h3>Legen Of Zelda: Occarina Of Time 3D</h3>
+					<p>Platform: DS</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/DS.png" id="DS" />
+					<h3>Pilotwings Resort</h3>
+					<p>Platform: DS</p>
+					<p>Genre: Sports</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/DS.png" id="DS" />
+					<h3>Steel Diver</h3>
+					<p>Platform: DS</p>
+					<p>Genre: Simulation</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 2</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/DS.png" id="DS" />
+					<h3>Star Fox 64 3D</h3>
+					<p>Platform: DS</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/DS.png" id="DS" />
+					<h3>Samurai Chronicles</h3>
+					<p>Platform: DS</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/DS.png" id="DS" />
+					<h3>Legend Of Zelda: Phantom Hourglass</h3>
+					<p>Platform: DS</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/DS.png" id="DS" />
+					<h3>Legend Of Zelda: Spirit Tracks</h3>
+					<p>Platform: DS</p>
+					<p>Genre: RPG,Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/DS.png" id="DS" />
+					<h3>Chrono Trigger</h3>
+					<p>Platform: DS</p>
+					<p>Genre: RPG</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/DS.png" id="DS" />
+					<h3>Super Mario 3D Land</h3>
+					<p>Platform: DS</p>
+					<p>Genre: Action/Adventure</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 1</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+				<li>
+					<img src="images/DS.png" id="DS" />
+					<h3>Mario Kart 7</h3>
+					<p>Platform: DS</p>
+					<p>Genre: Sports</p>
+					<p>Favorite: Yes</p>
+					<p>Players: 4+</p>
+					<p>Purchase Date: 01-15-2012</p>
+					<p>Notes: Test</p>
+					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
+				</li>
+			</div>
+	
+		</div>
+	
+		<div data-role="footer"  data-theme="a">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="additem.html" data-ajax="false" data-icon="check">Add New Game</a></li>
+					<li><a href="#" data-ajax="false" data-icon="delete">Clear Storage</a></li>
+					<li><a href="#" data-ajax="false" data-icon="gear">Options</a></li>	
+				</ul>
+			
+			</div>
+			<h4>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week2">Github Repo</a>
+				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
+			</h4>	
+		</div>
+
+	</div>	
+	
+
 
 	
 
