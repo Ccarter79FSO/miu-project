@@ -1,6 +1,6 @@
 /*
 Christopher Carter
-MIU Project week 1
+MIU Project week 2
 Term 0212
 */
 
