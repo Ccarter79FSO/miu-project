@@ -1,6 +1,6 @@
 /*
 Christopher Carter
-MIU Project Week 1
+MIU Project Week 2 wrong
 Term 0212
 */
 
@@ -14,3 +14,56 @@ img[id=cta]{
 	height: 200px;
  	
  }
+ 
+/*
+div[id=games]{
+	background-image: -webkit-linear-gradient(#666,#222);
+}
+*/
+
+p.subdata{
+	font-size: smaller;
+}
+
+
+
+h2{
+	margin-left: 45px;
+}
+
+div.ui-grid-b{
+	
+	margin-left: 20px;
+	
+}
+
+div.ui-grid-a{
+	
+	margin-left: 25px;
+	
+}
+
+img[id=wii]{
+	margin-left: 40px;]
+}
+/*
+div.ui-block-a{
+	width: 130px;
+	height: 130px;
+	margin-right: 10px;
+}
+
+div.ui-block-b{
+	width: 130px;
+	height: 130px;
+	margin-right: 10px;
+}
+
+div.ui-block-c{
+	width: 130px;
+	height: 130px;
+	margin-right: 10px;
+}
+*/
+
+
