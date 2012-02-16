@@ -28,6 +28,7 @@ Term 0212
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
 	<link rel="stylesheet" href="css/indexstyle.css" />
 
 	
@@ -1085,21 +1086,105 @@ Term 0212
 	
 		<div data-role="content" data-theme="a">
 		
+			<form action="" method="post" id="addgameform">
 			
-
+				<div data-role="fieldcontain">
+					<label for="gametitle">Game Title:</label>
+					<p class="subhead">Enter the title of your game.</p>
+					<input type="text" name="gametitle" id="gametitle" class="required" />
+				</div>
+							
+				<div data-role="fieldcontain">
+					<label for="platform">Platform:</label>
+					<select name="platform" id="platform" data-native-menu="false" class="required" >
+					<option data-placeholder="true" value>Please Select A Platform</option>
+						<optgroup label="Home Console">
+							<option value="PC">PC</option>
+							<option value="PS3">PS3</option>
+							<option value="Xbox">Xbox</option>
+							<option value="Wii">Wii</option>
+						</optgroup>
+						<optgroup label="Handheld">
+							<option value="DS">DS</option>
+							<option value="3DS">3DS</option>
+							<option value="PSP">PSP</option>
+							<option value="PSV">PS Vita</option>
+						</optgroup>
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Select Game Genre:</legend>
+						<p class="subhead">Choose one or more options.</p>
+						<input type="checkbox" value="RPG" name="genre" id="rpg" class="required" />
+						<label for="rpg">RPG</label>
+						<input type="checkbox" value="FPS" name="genre" id="fps" />
+						<label for="fps">FPS</label>
+						<input type="checkbox" value="RTS" name="genre" id="rts" />
+						<label for="rts">RTS</label>
+						<input type="checkbox" value="Action/Adventure" name="genre" id="action/adventure" />
+						<label for="action/adventure">Action/Adventure</label>
+						<input type="checkbox" value="Simulation" name="genre" id="simulation" />
+						<label for="simulation">Simulation</label>
+						<input type="checkbox" value="Sports" name="genre" id="sports" />
+						<label for="sports">Sports</label>
+						<input type="checkbox" value="Casual" name="genre" id="casual" />
+						<label for="casual">Casual</label>
+					</fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="fav">Favorite?:</label>
+					<p class="subhead">Yes or No.</p>
+					<select name="slider" id="fav" data-role="slider">
+						<option value="off">No</option>
+						<option value="on">Yes</option>
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="numplayers">Number Of Players:</label>
+					<select name="numplayers" id="numplayers" data-native-menu="false" class="required number">
+					<option data-placeholder="true">Select Number Of Players</option>
+						<option value="1">Single Player</option>
+						<option value="2">2 Players</option>
+						<option value="3">3 Players</option>
+						<option value="4+">4 or More Players</option>
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="date">Date Of Purchase:</label>
+					<p class="subhead">Enter your date of purchase.</p>
+					<input name="date" id="date" type="date" data-role="datebox" data-options='{"mode": "calbox"}' placeholder="Click To Select Date -->" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="notes">Notes:</label>
+					<textarea name="notes" id="notes" placeholder="Add some notes about your game here."></textarea>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<input type="submit" value="Submit" id="submit" data-theme="b" />
+					<input type="reset" value="Cancel" id="cancel" data-theme="a" />				
+				</div>
+								
+			</form>
 		</div>
 		
 	
 	</div>	
-	
-
 
 	
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+	<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/main_old.js" type="text/javascript"></script>
 	<script src="js/json.js" type="text/javascript"></script>
 
 </body>
