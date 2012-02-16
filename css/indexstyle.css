@@ -13,4 +13,20 @@ img[id=cta]{
  	width: 300px;
 	height: 200px;
  	
- }
+}
+ 
+p.subhead{
+	font-size: medium;
+	color: #2489CE;
+
+}
+
+label.error{
+	display: block;
+	margin: 10px 0;
+	color: red;
+}
+
+#errorslink {
+	display: none;
+}
