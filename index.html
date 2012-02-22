@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 Christopher Carter
-MIU Project week 2 wrong
+MIU Project week 2
 Term 0212
 -->
 
@@ -28,6 +28,8 @@ Term 0212
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
+	<link rel="stylesheet" href="css/wrong.css" />
 	<link rel="stylesheet" href="css/indexstyle.css" />
 
 	
@@ -48,7 +50,7 @@ Term 0212
 		<div data-role="content" data-theme="a">
 			
 			<div>	
-				<a href="additem.html" data-ajax="false"><img src="images/CTA.png" id="cta" /></a>
+				<a href="#additem"><img src="images/CTA.png" id="cta" /></a>
 			</div>	
 			
 			<ul data-role="listview" data-inset="true">
@@ -92,7 +94,7 @@ Term 0212
 					
 		<div data-role="footer"  data-theme="a">
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
@@ -110,57 +112,51 @@ Term 0212
 	
 		<div data-role="content" data-theme="a">
 
-			<h2>Browse Collection</h2>
-			
-			<div data-role="fieldcontain">
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<h3>Latest Acquisitions</h3>
-					<p class="subdata">Steel Diver for DS: Added on 02-09-2012</p>
-					<p class="subdata">Pilotwings Resort for DS: Added on 02-09-2012</p>
-					<p class="subdata">Star Fox 64 3D for DS: Added on 02-09-2012</p>
-					<p class="subdata">Samurai Chronicles for DS: Added on 02-09-2012</p>
-					<p class="subdata">Star Wars: The Old Republic for PC: Added on 12-21-2011</p>
-					<p class="subdata">Legend Of Zelda: Skyward Sword for Wii: Added on 11-19-2011</p>
-					<p class="subdata">Skyrim for PC: Added on 11-11-2011</p>
-				</div>
-			</div>
-						
-			<div class="ui-grid-b">	
-				<div class="ui-block-a">
+		
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">Browse Collection</li>
+				<li>
 					<a href="#pc">
-						<img src="images/PC.png" id="pc" />
+						<img src="images/PC.png" />
+						<h3>PC Games</h3>
+						<p>Show all PC games in your collection.</p>
 					</a>
-				</div>
-				<div class="ui-block-b">
+				</li>
+				<li>
 					<a href="#ps3">
-						<img src="images/PS3.png" id="ps3" />
+						<img src="images/PS3.png" />
+						<h3>PS3 Games</h3>
+						<p>Show all PS3 games in your collection.</p>
 					</a>
-				</div>
-				<div class="ui-block-c">
+				</li>
+				<li>
 					<a href="#xbox">
-						<img src="images/Xbox.png" id="xbox" />
+						<img src="images/Xbox.png" />
+						<h3>Xbox Games</h3>
+						<p>Show all Xbox games in your collection.</p>
 					</a>
-				</div>
-			</div>
-				
-			<div class="ui-grid-a">
-				<div class="ui-block-a">
+				</li>
+				<li>
 					<a href="#wii">
-						<img src="images/Wii.png" id="wii" />
+						<img src="images/Wii.png" />
+						<h3>Wii Games</h3>
+						<p>Show all Wii games in your collection.</p>
 					</a>
-				</div>
-				<div class="ui-block-b">
+				</li>
+				<li>
 					<a href="#ds">
-						<img src="images/DS.png" id="ds" />
+						<img src="images/DS.png" />
+						<h3>DS Games</h3>
+						<p>Show all DS games in your collection.</p>
 					</a>
-				</div>
-			</div>
+				</li>
+			</ul>
 	
 		</div>
 	
 		<div data-role="footer"  data-theme="a">
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
@@ -183,7 +179,7 @@ Term 0212
 	
 		<div data-role="footer"  data-theme="a">
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
@@ -207,7 +203,7 @@ Term 0212
 	
 		<div data-role="footer"  data-theme="a">
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
@@ -231,7 +227,7 @@ Term 0212
 	
 		<div data-role="footer"  data-theme="a">
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
@@ -255,7 +251,7 @@ Term 0212
 	
 		<div data-role="footer"  data-theme="a">
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
@@ -273,20 +269,20 @@ Term 0212
 				
 		<div data-role="content" data-theme="a">
 			
-			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+			<div data-role="listview" data-filter="true" data-filter-theme="a">
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Skyrim</h3>
 					<p>Platform: PC</p>
 					<p>Genre: RPG,FPS</p>
 					<p>Favorite: Yes</p>
 					<p>Players: 1</p>
-					<p>Purchase Date: 11-11-2011</p>
+					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Rage</h3>
 					<p>Platform: PC</p>
 					<p>Genre: FPS</p>
@@ -295,20 +291,20 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Star Wars: The Old Republic</h3>
 					<p>Platform: PC</p>
 					<p>Genre: RPG</p>
 					<p>Favorite: Yes</p>
 					<p>Players: 4+</p>
-					<p>Purchase Date: 12-21-2011</p>
+					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>World Of Warcraft</h3>
 					<p>Platform: PC</p>
 					<p>Genre: RPG</p>
@@ -317,9 +313,9 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Star Craft II</h3>
 					<p>Platform: PC</p>
 					<p>Genre: RTS</p>
@@ -328,9 +324,9 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>L.A. Noire</h3>
 					<p>Platform: PC</p>
 					<p>Genre: Action/Adventure</p>
@@ -339,9 +335,9 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Call Of Duty: Modern Warfare 3</h3>
 					<p>Platform: PC</p>
 					<p>Genre: FPS</p>
@@ -350,9 +346,9 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Assassin's Creed</h3>
 					<p>Platform: PC</p>
 					<p>Genre: Action/Adventure</p>
@@ -361,9 +357,9 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Assassin's Creed II</h3>
 					<p>Platform: PC</p>
 					<p>Genre: Action/Adventure</p>
@@ -372,9 +368,9 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Assassin's Creed II: Brotherhood</h3>
 					<p>Platform: PC</p>
 					<p>Genre: Action/Adventure</p>
@@ -383,9 +379,9 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Assassin's Creed II: Revelations</h3>
 					<p>Platform: PC</p>
 					<p>Genre: Action/Adventure</p>
@@ -394,9 +390,9 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Batman Arkham Asylum</h3>
 					<p>Platform: PC</p>
 					<p>Genre: Action/Adventure</p>
@@ -405,9 +401,9 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Batman Arkham City</h3>
 					<p>Platform: PC</p>
 					<p>Genre: Action/Adventure</p>
@@ -416,9 +412,9 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
-					<img src="images/PC.png" id="pc" />
+				</li>
+				<li>
+					<img src="images/PC.png" id="PC" />
 					<h3>Portal</h3>
 					<p>Platform: PC</p>
 					<p>Genre: FPS</p>
@@ -427,7 +423,7 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
+				</li>
 			</div>
 
 		</div>
@@ -443,7 +439,7 @@ Term 0212
 			
 			</div>
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
@@ -462,8 +458,8 @@ Term 0212
 	
 		<div data-role="content" data-theme="a">
 
-			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+			<div data-role="listview" data-filter="true" data-filter-theme="a">
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Demon Souls</h3>
 					<p>Platform: PS3</p>
@@ -473,8 +469,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Uncharted: Drakes Fortune</h3>
 					<p>Platform: PS3</p>
@@ -484,8 +480,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Uncharted 2: Among Theives</h3>
 					<p>Platform: PS3</p>
@@ -495,8 +491,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Uncharted 3: Drake's Deception</h3>
 					<p>Platform: PS3</p>
@@ -506,8 +502,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Little Big Planet</h3>
 					<p>Platform: PS3</p>
@@ -517,8 +513,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Little Big Planet 2</h3>
 					<p>Platform: PS3</p>
@@ -528,8 +524,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>God Of War 3</h3>
 					<p>Platform: PS3</p>
@@ -539,8 +535,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Red Dead Redemption</h3>
 					<p>Platform: PS3</p>
@@ -550,8 +546,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Singstar</h3>
 					<p>Platform: PS3</p>
@@ -561,8 +557,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Singstar: Pop</h3>
 					<p>Platform: PS3</p>
@@ -572,8 +568,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Singstar: Dance</h3>
 					<p>Platform: PS3</p>
@@ -583,8 +579,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Singstar: Vol 2</h3>
 					<p>Platform: PS3</p>
@@ -594,8 +590,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Singstar: Vol 3</h3>
 					<p>Platform: PS3</p>
@@ -605,8 +601,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/PS3.png" id="PS3" />
 					<h3>Final Fantasy XIII-2</h3>
 					<p>Platform: PS3</p>
@@ -616,7 +612,7 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
+				</li>
 			</div>
 	
 		</div>
@@ -631,7 +627,7 @@ Term 0212
 			
 			</div>
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
@@ -650,8 +646,8 @@ Term 0212
 	
 		<div data-role="content" data-theme="a">
 
-			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+			<div data-role="listview" data-filter="true" data-filter-theme="a">
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Gears Of War</h3>
 					<p>Platform: Xbox</p>
@@ -661,8 +657,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Gears Of War 2</h3>
 					<p>Platform: Xbox</p>
@@ -672,8 +668,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Gears Of War 3</h3>
 					<p>Platform: Xbox</p>
@@ -683,8 +679,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Halo: Combat Evolved</h3>
 					<p>Platform: Xbox</p>
@@ -694,8 +690,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Halo 2</h3>
 					<p>Platform: Xbox</p>
@@ -705,8 +701,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Halo 3</h3>
 					<p>Platform: Xbox</p>
@@ -716,8 +712,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Halo: Reach</h3>
 					<p>Platform: Xbox</p>
@@ -727,8 +723,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Saints Row 3</h3>
 					<p>Platform: Xbox</p>
@@ -738,8 +734,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Skyrim</h3>
 					<p>Platform: Xbox</p>
@@ -749,8 +745,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Call Of Duty: Modern Warfare 3</h3>
 					<p>Platform: Xbox</p>
@@ -760,8 +756,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Battlefield 3</h3>
 					<p>Platform: Xbox</p>
@@ -771,8 +767,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Grand Theft Auto IV</h3>
 					<p>Platform: Xbox</p>
@@ -782,8 +778,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Rock Band 3</h3>
 					<p>Platform: Xbox</p>
@@ -793,8 +789,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Xbox.png" id="Xbox" />
 					<h3>Guitar Smith</h3>
 					<p>Platform: Xbox</p>
@@ -804,7 +800,7 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
+				</li>
 			</div>
 	
 		</div>
@@ -819,7 +815,7 @@ Term 0212
 			
 			</div>
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
@@ -837,8 +833,8 @@ Term 0212
 	
 		<div data-role="content" data-theme="a">
 
-			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+			<div data-role="listview" data-filter="true" data-filter-theme="a">
+				<li>
 					<img src="images/Wii.png" id="Wii" />
 					<h3>Super Mario Galaxy</h3>
 					<p>Platform: Wii</p>
@@ -848,8 +844,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Wii.png" id="Wii" />
 					<h3>Super Mario Galaxy 2</h3>
 					<p>Platform: Wii</p>
@@ -859,19 +855,19 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Wii.png" id="Wii" />
 					<h3>Legend Of Zelda: Skyward Sword</h3>
 					<p>Platform: Wii</p>
 					<p>Genre: Action/Adventure</p>
 					<p>Favorite: Yes</p>
 					<p>Players: 1</p>
-					<p>Purchase Date: 11-19-2011</p>
+					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Wii.png" id="Wii" />
 					<h3>Metroid Prime Trilogy</h3>
 					<p>Platform: Wii</p>
@@ -881,8 +877,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Wii.png" id="Wii" />
 					<h3>Super Smash Bro's Brawl</h3>
 					<p>Platform: Wii</p>
@@ -892,8 +888,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Wii.png" id="Wii" />
 					<h3>Conduit</h3>
 					<p>Platform: Wii</p>
@@ -903,8 +899,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/Wii.png" id="Wii" />
 					<h3>Conduit 2</h3>
 					<p>Platform: Wii</p>
@@ -914,7 +910,7 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
+				</li>
 			</div>
 	
 		</div>
@@ -929,7 +925,7 @@ Term 0212
 			
 			</div>
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
@@ -948,8 +944,8 @@ Term 0212
 	
 		<div data-role="content" data-theme="a">
 
-\			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+			<div data-role="listview" data-filter="true" data-filter-theme="a">
+				<li>
 					<img src="images/DS.png" id="DS" />
 					<h3>Legen Of Zelda: Occarina Of Time 3D</h3>
 					<p>Platform: DS</p>
@@ -959,52 +955,52 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/DS.png" id="DS" />
 					<h3>Pilotwings Resort</h3>
 					<p>Platform: DS</p>
 					<p>Genre: Sports</p>
 					<p>Favorite: Yes</p>
 					<p>Players: 1</p>
-					<p>Purchase Date: 02-09-2012</p>
+					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/DS.png" id="DS" />
 					<h3>Steel Diver</h3>
 					<p>Platform: DS</p>
 					<p>Genre: Simulation</p>
 					<p>Favorite: Yes</p>
 					<p>Players: 2</p>
-					<p>Purchase Date: 02-09-2012</p>
+					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/DS.png" id="DS" />
 					<h3>Star Fox 64 3D</h3>
 					<p>Platform: DS</p>
 					<p>Genre: Action/Adventure</p>
 					<p>Favorite: Yes</p>
 					<p>Players: 4+</p>
-					<p>Purchase Date: 02-09-2012</p>
+					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/DS.png" id="DS" />
 					<h3>Samurai Chronicles</h3>
 					<p>Platform: DS</p>
 					<p>Genre: Action/Adventure</p>
 					<p>Favorite: Yes</p>
 					<p>Players: 1</p>
-					<p>Purchase Date: 02-09-2012</p>
+					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/DS.png" id="DS" />
 					<h3>Legend Of Zelda: Phantom Hourglass</h3>
 					<p>Platform: DS</p>
@@ -1014,8 +1010,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/DS.png" id="DS" />
 					<h3>Legend Of Zelda: Spirit Tracks</h3>
 					<p>Platform: DS</p>
@@ -1025,8 +1021,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/DS.png" id="DS" />
 					<h3>Chrono Trigger</h3>
 					<p>Platform: DS</p>
@@ -1036,8 +1032,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/DS.png" id="DS" />
 					<h3>Super Mario 3D Land</h3>
 					<p>Platform: DS</p>
@@ -1047,8 +1043,8 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="a">
+				</li>
+				<li>
 					<img src="images/DS.png" id="DS" />
 					<h3>Mario Kart 7</h3>
 					<p>Platform: DS</p>
@@ -1058,8 +1054,7 @@ Term 0212
 					<p>Purchase Date: 01-15-2012</p>
 					<p>Notes: Test</p>
 					<p><a href="#">Edit Game</a>&nbsp;<a href="#">Delete Game</a></p>
-				</div>
-			</div>
+				</li>
 			</div>
 	
 		</div>
@@ -1074,21 +1069,123 @@ Term 0212
 			
 			</div>
 			<h4>
-				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3wrong">Github Repo</a>
+				<a href="https://github.com/Ccarter79FSO/miu-project/tree/week3">Github Repo</a>
 				<a href="http://ccarter79fso.github.com/miu-project/">Github Site</a>
 			</h4>	
 		</div>
 
-	</div>	
+	</div>
 	
-
+	<div data-role="page" id="additem" data-add-back-btn="true">
+	
+		<div data-role="header" data-theme="a">
+				
+			<h1>Add A Game</h1>
+			<a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+			
+		</div>
+	
+		<div data-role="content" data-theme="a">
+		
+			<form action="" method="post" id="addgameform">
+			
+				<div data-role="fieldcontain">
+					<label for="gametitle">Game Title:</label>
+					<p class="subhead">Enter the title of your game.</p>
+					<input type="text" name="gametitle" id="gametitle" class="required" />
+				</div>
+							
+				<div data-role="fieldcontain">
+					<label for="platform">Platform:</label>
+					<select name="platform" id="platform" data-native-menu="false" class="required" >
+					<option data-placeholder="true" value>Please Select A Platform</option>
+						<optgroup label="Home Console">
+							<option value="PC">PC</option>
+							<option value="PS3">PS3</option>
+							<option value="Xbox">Xbox</option>
+							<option value="Wii">Wii</option>
+						</optgroup>
+						<optgroup label="Handheld">
+							<option value="DS">DS</option>
+							<option value="3DS">3DS</option>
+							<option value="PSP">PSP</option>
+							<option value="PSV">PS Vita</option>
+						</optgroup>
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Select Game Genre:</legend>
+						<p class="subhead">Choose one or more options.</p>
+						<input type="checkbox" value="RPG" name="genre" id="rpg" class="required" />
+						<label for="rpg">RPG</label>
+						<input type="checkbox" value="FPS" name="genre" id="fps" />
+						<label for="fps">FPS</label>
+						<input type="checkbox" value="RTS" name="genre" id="rts" />
+						<label for="rts">RTS</label>
+						<input type="checkbox" value="Action/Adventure" name="genre" id="action/adventure" />
+						<label for="action/adventure">Action/Adventure</label>
+						<input type="checkbox" value="Simulation" name="genre" id="simulation" />
+						<label for="simulation">Simulation</label>
+						<input type="checkbox" value="Sports" name="genre" id="sports" />
+						<label for="sports">Sports</label>
+						<input type="checkbox" value="Casual" name="genre" id="casual" />
+						<label for="casual">Casual</label>
+					</fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="fav">Favorite?:</label>
+					<p class="subhead">Yes or No.</p>
+					<select name="slider" id="fav" data-role="slider">
+						<option value="off">No</option>
+						<option value="on">Yes</option>
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="numplayers">Number Of Players:</label>
+					<select name="numplayers" id="numplayers" data-native-menu="false" class="required number">
+					<option data-placeholder="true">Select Number Of Players</option>
+						<option value="1">Single Player</option>
+						<option value="2">2 Players</option>
+						<option value="3">3 Players</option>
+						<option value="4+">4 or More Players</option>
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="date">Date Of Purchase:</label>
+					<p class="subhead">Enter your date of purchase.</p>
+					<input name="date" id="date" type="date" data-role="datebox" data-options='{"mode": "calbox"}' placeholder="Click To Select Date -->" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="notes">Notes:</label>
+					<textarea name="notes" id="notes" placeholder="Add some notes about your game here."></textarea>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<input type="submit" value="Submit" id="submit" data-theme="b" />
+					<input type="reset" value="Cancel" id="cancel" data-theme="a" />				
+				</div>
+								
+			</form>
+		</div>
+		
+	
+	</div>	
 
 	
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+	<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/main_old.js" type="text/javascript"></script>
 	<script src="js/json.js" type="text/javascript"></script>
 
 </body>
