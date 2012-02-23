@@ -1,3 +1,9 @@
+/*
+Christopher Carter
+MIU Project Week 4
+Term 0212
+*/
+
 $(document).ready(function(){
 
 	var gameform = $('#addgameform');
@@ -8,7 +14,7 @@ $(document).ready(function(){
 		},
 		submitHandler: function(){
 			var data = gameform.serializeArray();
-			
+			localStorage.setItem()
 		}
 	
 	
